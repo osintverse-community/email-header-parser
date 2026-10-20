@@ -22,7 +22,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/email-header-parser@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/email-header-parser@sha256:58ccadc6735e5448cc85adb037270fb76030b2dbe1e7448b030d6033dd9af053
   platforms: [linux/amd64, linux/arm64]
   command: ["email-header-parser", "{headers}"]
   output_format: json
