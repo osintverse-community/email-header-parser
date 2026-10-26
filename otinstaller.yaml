@@ -3,7 +3,7 @@
 schema: 1
 name: email-header-parser
 namespace: osintverse-community
-version: 0.1.0
+version: 0.1.1
 summary: "Parses raw email headers into senders, relay hops, IPs and SPF/DKIM/DMARC results"
 readme: README.md
 license: MIT
@@ -22,7 +22,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/email-header-parser@sha256:58ccadc6735e5448cc85adb037270fb76030b2dbe1e7448b030d6033dd9af053
+  image: ghcr.io/osintverse-community/email-header-parser@sha256:08375191dded168d46a20e702b5f6cdf83f1f933968906c1bffc83d623e81fd3
   platforms: [linux/amd64, linux/arm64]
   command: ["email-header-parser", "{headers}"]
   output_format: json
